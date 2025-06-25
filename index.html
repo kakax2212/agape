@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ágape Transportes | Soluções Logísticas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-glow">Ágape</span>
+        <span class="logo-tech">Transportes</span>
+      </div>
+      <nav class="nav">
+        <a href="#sobre" class="nav-link"><i class="fas fa-truck"></i> Sobre</a>
+        <a href="#servicos" class="nav-link"><i class="fas fa-route"></i> Serviços</a>
+        <a href="#frota" class="nav-link"><i class="fas fa-truck-moving"></i> Frota</a>
+        <a href="#contato" class="nav-link"><i class="fas fa-phone"></i> Contato</a>
+      </nav>
+      <a href="https://wa.me/5519989050468?text=Olá! Gostaria de solicitar uma cotação para transporte de cargas." class="btn-cta" target="_blank">
+        Solicitar Cotação
+        <i class="fas fa-truck"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1 class="hero-title">Transporte Rodoviário de Qualidade</h1>
+      <p class="hero-subtitle">Sua carga no destino certo, com segurança e pontualidade</p>
+      <div class="hero-cta">
+        <a href="https://wa.me/5519989050468?text=Olá! Gostaria de solicitar uma cotação para transporte de cargas." class="btn-main" target="_blank">
+          Solicite uma Cotação
+          <i class="fas fa-truck"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre a Empresa -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2 class="section-title">Nossa História</h2>
+      <div class="servicos-cards">
+        <div class="servico-card">
+          <div class="servico-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Missão</h3>
+          <p>Transportar com excelência, garantindo a integridade e o prazo das cargas</p>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon"><i class="fas fa-eye"></i></div>
+          <h3>Visão</h3>
+          <p>Ser referência nacional em transporte rodoviário de cargas</p>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon"><i class="fas fa-heart"></i></div>
+          <h3>Valores</h3>
+          <p>Ética, compromisso, inovação e respeito ao cliente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2 class="section-title">Nossos Serviços</h2>
+      <div class="servicos-cards">
+        <div class="servico-card">
+          <div class="servico-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Serviço Express – Entrega no Mesmo Dia</h3>
+          <p>Coleta e entrega no mesmo dia (até 400 km). Cumprimento rigoroso de prazos. Ideal para demandas urgentes de comércio e indústria.</p>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon"><i class="fas fa-truck"></i></div>
+          <h3>Transporte Rodoviário</h3>
+          <p>Frota variada para todos os tipos de carga. Estrutura completa para garantir eficiência e agilidade. De utilitários a caminhões pesados.</p>
+        </div>
+        <div class="servico-card">
+          <div class="servico-icon"><i class="fas fa-boxes"></i></div>
+          <h3>Distribuição</h3>
+          <p>Equipe especializada em entregas programadas. Foco em precisão, organização e pontualidade. Atendimento personalizado para cada cliente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frota -->
+  <section id="frota" class="frota">
+    <div class="container">
+      <h2 class="section-title">Nossa Frota</h2>
+      <div class="frota-showcase">
+        <div class="vehicle-info">
+          <h3>Frota Moderna e Segura</h3>
+          <p>Veículos equipados com tecnologia de ponta para garantir a segurança e eficiência do seu transporte</p>
+          <ul class="frota-features">
+            <li><i class="fas fa-check"></i> Rastreamento 24h</li>
+            <li><i class="fas fa-check"></i> Manutenção Preventiva</li>
+            <li><i class="fas fa-check"></i> Motoristas Qualificados</li>
+            <li><i class="fas fa-check"></i> Seguro Completo</li>
+          </ul>
+        </div>
+      
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2 class="section-title">Entre em Contato</h2>
+      <form class="contato-form" onsubmit="enviarWhatsApp(event)">
+        <div class="form-group">
+          <input type="text" id="nome" required>
+          <label>Nome</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" required>
+          <label>E-mail</label>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="telefone" required>
+          <label>Telefone</label>
+        </div>
+        <div class="form-group">
+          <textarea id="mensagem" required></textarea>
+          <label>Mensagem</label>
+        </div>
+        <button type="submit" class="btn-main">
+          Enviar
+          <i class="fas fa-truck"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        
+        <p>
+          <span class="footer-icon"><i class="fas fa-phone"></i></span>
+          <span class="footer-contact">19 98905-0468</span>
+          &nbsp;|&nbsp;
+          <span class="footer-icon"><i class="fas fa-envelope"></i></span>
+          <span class="footer-contact">agapetransportes.adm@gmail.com </span>
+        </p>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2024 Ágape Transportes | Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script>
+    function enviarWhatsApp(event) {
+      event.preventDefault();
+      
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const telefone = document.getElementById('telefone').value;
+      const mensagem = document.getElementById('mensagem').value;
+      
+      const texto = `Olá, bom dia! Acabei de ser redirecionado pelo site da Ágape Transportes e gostaria de mais informações, por favor.`;
+      
+      const url = `https://wa.me/5519989050468?text=${encodeURIComponent(texto)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html> 
